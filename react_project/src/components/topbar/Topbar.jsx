@@ -14,8 +14,7 @@ export default function Topbar () {
             </div>
             <div className="topbarRight">
                 <div className="topbarLinks">
-                    <span className="topbarLinks">Anasayfa</span>
-                    <span className="topbarLinks">Timeline</span>
+                    <span className="topbarLinks"></span>
                 </div>
                 <div className="topbarIcons">
                     <div className="topbarIconItem">

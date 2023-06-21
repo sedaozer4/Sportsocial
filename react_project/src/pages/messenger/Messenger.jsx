@@ -13,9 +13,6 @@ export default function Messenger() {
                     <div className="chatMenuWrapper">
                         <input placeholder="Arkadaşlarını ara" className="chatMenuInput" />
                         <Conversation />
-                        <Conversation />
-                        <Conversation />
-                        <Conversation />
                     </div>
                 </div>
                 <div className="chatBox">

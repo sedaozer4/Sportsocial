@@ -1,7 +1,7 @@
 import "./rightbar.css"
 import {Users} from "../../dummyData"
 import Online from "../online/Online";
-import Profile from "../../pages/profile/Profile";
+//import Profile from "../../pages/profile/Profile";
 export default function Rightbar ({profile}) {
     const HomeRightbar = () => {
         return(
@@ -9,10 +9,10 @@ export default function Rightbar ({profile}) {
                 <div className="birthdayContainer">
                     <img className="birthdayImg" src="/assets/gift.png" alt=""/>
                     <span className="birthdayText">
-                        <b>Pola Foster</b> ve <b>3 arkadaşının</b> bugün doğum günü.
+                        <b>Tahsin Öğüt</b> ve <b>3 arkadaşının</b> bugün doğum günü.
                     </span>
                 </div>
-                <img className="rightbarAd" src="/assets/ad.png" alt=""/>
+                <img className="rightbarAd" src="/assets/ad2.png" alt=""/>
                 <h4 className="rightbarTitle">Çevrimiçi Arkadaşlar</h4>
                 <ul className="rightbarFriendList">
                     {Users.map(u=>(
@@ -44,43 +44,43 @@ export default function Rightbar ({profile}) {
                     <div className="rightbarFollowings">
                         <div className="rightbarFollowing">
                             <img src="/assets/person/5.jpeg" alt="" className="rightbarFollowingImg"/>
-                            <span className="rightbarFollowingName">Eyüp Özer</span>
+                            <span className="rightbarFollowingName">Tahsin Öğüt</span>
                         </div>
                         <div className="rightbarFollowing">
                             <img src="/assets/person/2.jpeg" alt="" className="rightbarFollowingImg"/>
-                            <span className="rightbarFollowingName">Eyüp Özer</span>
+                            <span className="rightbarFollowingName">İlker Canikligil</span>
                         </div>
                         <div className="rightbarFollowing">
                             <img src="/assets/person/3.jpeg" alt="" className="rightbarFollowingImg"/>
-                            <span className="rightbarFollowingName">Eyüp Özer</span>
+                            <span className="rightbarFollowingName">Mustafa Seven</span>
                         </div>
                         <div className="rightbarFollowing">
                             <img src="/assets/person/4.jpeg" alt="" className="rightbarFollowingImg"/>
-                            <span className="rightbarFollowingName">Eyüp Özer</span>
+                            <span className="rightbarFollowingName">Funda Güngör</span>
                         </div>
                         <div className="rightbarFollowing">
                             <img src="/assets/person/7.jpeg" alt="" className="rightbarFollowingImg"/>
-                            <span className="rightbarFollowingName">Eyüp Özer</span>
+                            <span className="rightbarFollowingName">Ebru İlkılıç</span>
                         </div>
                         <div className="rightbarFollowing">
                             <img src="/assets/person/9.jpeg" alt="" className="rightbarFollowingImg"/>
-                            <span className="rightbarFollowingName">Eyüp Özer</span>
+                            <span className="rightbarFollowingName">İpek Bayındır</span>
                         </div>
                         <div className="rightbarFollowing">
                             <img src="/assets/person/6.jpeg" alt="" className="rightbarFollowingImg"/>
-                            <span className="rightbarFollowingName">Eyüp Özer</span>
+                            <span className="rightbarFollowingName">Buse Varol</span>
                         </div>
                         <div className="rightbarFollowing">
                             <img src="/assets/person/8.jpeg" alt="" className="rightbarFollowingImg"/>
-                            <span className="rightbarFollowingName">Eyüp Özer</span>
+                            <span className="rightbarFollowingName">Sema Aydemir</span>
                         </div>
                         <div className="rightbarFollowing">
                             <img src="/assets/person/1.jpeg" alt="" className="rightbarFollowingImg"/>
-                            <span className="rightbarFollowingName">Eyüp Özer</span>
+                            <span className="rightbarFollowingName">Barış Özcan</span>
                         </div>
                         <div className="rightbarFollowing">
-                            <img src="/assets/person/1.jpeg" alt="" className="rightbarFollowingImg"/>
-                            <span className="rightbarFollowingName">Eyüp Özer</span>
+                            <img src="/assets/person/9.jpeg" alt="" className="rightbarFollowingImg"/>
+                            <span className="rightbarFollowingName">Cem Karaca</span>
                         </div>
                     </div>
                 </div>
