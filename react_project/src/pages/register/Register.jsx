@@ -1,27 +1,48 @@
-import "./register.css"
+import { useState } from "react"
+import { useNavigate } from 'react-router-dom';
+import AuthUser from '../auth/AuthUser';
 
 export default function Register() {
-    return (
-      <div className="register">
-          <div className="registerWrapper">
-              <div className="registerLeft">
-                  <h3 className="registerLogo">SportSocial</h3>
-                  <span className="registerDesc">
-                      Spor yaparken arkadaşlarınla sosyalleş.
-                  </span>
-              </div>
-              <div className="registerRight">
-                  <div className="registerBox">
-                      <input placeholder="Ad" className="registerInput"/>
-                      <input placeholder="Soyad" className="registerInput"/>
-                      <input placeholder="Email" className="registerInput"/>
-                      <input placeholder="Şifre" className="registerInput"/>
-                      <input placeholder="Tekrar Şifre" className="registerInput"/>
-                      <button className="registerButton">Kayıt Ol</button>
-                      <button className="registerRegisterButton">Hesaba Giriş Yap</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-    );
+    const navigate = useNavigate();
+    const {http,setToken} = AuthUser();
+    const [name,setName] = useState();
+    const [email,setEmail] = useState();
+    const [password,setPassword] = useState();
+
+    const submitForm = () =>{
+        // api call
+        http.post('/register',{email:email,password:password,name:name}).then((res)=>{
+            navigate('/login')
+        })
+    }
+
+    return(
+        <div className="row justify-content-left pt-5">
+            <div className="col-sm-6">
+                <div className="card p-4">
+                    <h1 className="text-center mb-3">Register </h1>
+                    <div className="form-group">
+                        <label>Name:</label>
+                        <input type="test" className="form-control" placeholder="Enter name"
+                               onChange={e=>setName(e.target.value)}
+                               id="email" />
+                    </div>
+                    <div className="form-group mt-3">
+                        <label>Email address:</label>
+                        <input type="email" className="form-control" placeholder="Enter email"
+                               onChange={e=>setEmail(e.target.value)}
+                               id="email" />
+                    </div>
+
+                    <div className="form-group mt-3">
+                        <label>Password:</label>
+                        <input type="password" className="form-control" placeholder="Enter password"
+                               onChange={e => setPassword(e.target.value)}
+                               id="pwd" />
+                    </div>
+                    <button type="button" onClick={submitForm} className="btn btn-primary mt-4">Register</button>
+                </div>
+            </div>
+        </div>
+    )
 }

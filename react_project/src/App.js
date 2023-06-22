@@ -1,16 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./pages/home/Home";
-//import Profile from "./pages/profile/Profile";
-//import Messenger from "./pages/messenger/Messenger";
-//import Register from "./pages/register/Register";
-//import Login from "./pages/login/Login";
-//import Profile from "./pages/profile/Profile";
+import AuthUser from "./pages/auth/AuthUser";
+import Auth from "./pages/auth";
+import Guest from "./pages/guest";
 
 
 function App() {
-  return (
-      <Home />
-  );
+    const {getToken} = AuthUser();
+    if(!getToken()){
+        return <Guest />
+    }
+    return (
+        <Auth />
+    );
 }
 
 export default App;

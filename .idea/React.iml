@@ -8,6 +8,12 @@
       <sourceFolder url="file://$MODULE_DIR$/laravel/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/laravel/tests/Feature" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/laravel/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/laravel/spec" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/lcobucci/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/psr/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/stella-maris/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/tymon/jwt-auth" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
